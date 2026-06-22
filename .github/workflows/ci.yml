@@ -47,6 +47,7 @@ jobs:
       - run: npm run start
       - run: mkdir -p web/data
       - run: cp -rf dist/* web/data
+      - run: echo "github-rank.zailing.ai" > web/CNAME
 
       - name: Generate Contributors Images
         uses: jaywcjlove/github-action-contributors@main
